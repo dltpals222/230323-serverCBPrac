@@ -1,5 +1,5 @@
-import tagMakeCall from "../modules/tagMakeCall.mjs";
-import tagMakeFor from "../modules/tagMakeFor.mjs";
+import tagMakeCall from "../modules/tagMakeCall.js";
+import tagMakeFor from "../modules/tagMakeFor.js";
 
 
 const root = document.getElementById('root')

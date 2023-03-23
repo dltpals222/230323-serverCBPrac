@@ -1,4 +1,4 @@
-import tagMakeCall from "../modules/tagMakeCall.mjs"
+import tagMakeCall from "../modules/tagMakeCall.js"
 
 
 const root = document.getElementById('root')
