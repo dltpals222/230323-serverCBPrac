@@ -19,21 +19,34 @@ const server = http.createServer(function(request, response){
     case '/':
       serveStaticFile(response, './server/index.html','text/html',200);
       console.log(url)
+    break;
+
+    case '/inputserverhtml/index.js':
+      serveStaticFile(response, './inputServerHtml/index.js','text/javascript',200)
       break;
+    case '/modules/tagmakecall.js':
+      serveStaticFile(response, './modules/tagMakeCall.js', 'text/javascript',200)
+      break;
+
     case '/about':
       serveStaticFile(response, './server/about.html','text/html',200);
-      break;
+      // console.log(url)
+    break;
     case '/contact':
       serveStaticFile(response, './server/contact.html','text/html',200);
-      break;
+      // console.log(url)
+    break;
     case '/style.css':
       serveStaticFile(response, './server/style.css','text/css',200);
+      // console.log(url)
       break;
-    case 'script.js':
+    case '/script.js':
       serveStaticFile(response, './server/script.js','text/javascript',200);
+      // console.log(url)
       break;
     default: //만약에 위의 조건에 부합하지 않는것이 있을 경우 default를 띄워준다.
-      serveStaticFile(response, './server/404.html','text/html',404);
+    serveStaticFile(response, './server/404.html','text/html',404);
+    console.log(url)
       break;
   } //switch 끝
 }) //server 끝
