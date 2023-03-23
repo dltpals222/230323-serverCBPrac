@@ -30,7 +30,7 @@ const server = http.createServer(function(request, response){
       serveStaticFile(response, './server/style.css','text/css',200);
       break;
     case 'script.js':
-      serveStaticFile(request, './server/script.js','text/javascript',200);
+      serveStaticFile(response, './server/script.js','text/javascript',200);
       break;
     default: //만약에 위의 조건에 부합하지 않는것이 있을 경우 default를 띄워준다.
       serveStaticFile(response, './server/404.html','text/html',404);
